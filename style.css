@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'integral';
+    src: url(IntegralCF-Bold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #121212;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    /* border: 2px solid white; */
+}
+
+#welcome{
+    font-family: 'integral';
+    font-size: 11rem;
+}
+
+@media (min-width: 750px) and (max-width: 900px){
+    #welcome{
+        font-size: 9rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 750px){
+    #welcome{
+        font-size: 7rem;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 600px){
+    #welcome{
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 450px){
+    #welcome{
+        font-size: 4rem;
+    }
+}
+
+#valo{
+    color: #ff4655;
+}
+
+.mainp{
+    /* max-width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster1{
+    max-width: 100%;
+    height: auto;
+    border: 2px solid white;
+    margin: 25px;
+}
+
+.start{
+    font-family: 'integral';
+    font-size: 7rem;
+}
+
+#feb{
+    color: #ff4655;
+}
+
+.schedule{
+    text-align: center;
+}
+
+
+@media (max-width: 1200px){
+    .mainp{
+        /* font-size: 4rem; */
+        display: grid;
+
+    }
+    #poster{
+        margin: 0;
+    }
+}
