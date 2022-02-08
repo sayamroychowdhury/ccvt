@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    box-sizing: border-box;
 }
 
 html{
@@ -22,7 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     /* margin: 40px; */
-    /* border: 2px solid white; */
+    border: 2px solid white;
 }
 
 #welcome{
@@ -68,12 +69,19 @@ body{
     max-width: 100%;
     height: auto;
     border: 2px solid white;
-    margin: 25px;
+    /* margin: 25px; */
 }
 
-.start{
+.star{
     font-family: 'integral';
     font-size: 7rem;
+}
+
+@media (max-width: 500px){
+    .star{
+        font-size: 2rem;
+        /* background-color: #ff4655; */
+    }
 }
 
 .schedule{
@@ -86,5 +94,11 @@ body{
         /* font-size: 4rem; */
         display: grid;
 
+    }
+}
+
+@media (max-width: 500px){
+    .poster1{
+        margin: 0;
     }
 }
