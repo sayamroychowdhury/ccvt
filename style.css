@@ -136,7 +136,7 @@ body{
     justify-content: space-evenly;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 500px){
     .mainp{
         flex-direction: column;
         /* text-align: left; */
@@ -148,9 +148,10 @@ body{
     }
 }
 
-@media (min-width: 1000px){
-    .sc_1{
-        width: 500px;
+@media (min-width: 500px) and (max-width: 1000px){
+    .mainp, .begin{
+        flex-direction: column;
+        /* text-align: left; */
     }
 }
 
@@ -158,6 +159,12 @@ body{
     .result{
         flex-direction: column-reverse;
 
+    }
+}
+
+@media (min-width: 1000px){
+    .sc_1{
+        width: 500px;
     }
 }
 
