@@ -6,7 +6,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* color: white; */
     box-sizing: border-box;
 }
 
@@ -28,100 +27,32 @@ body{
     /* padding: 5px 25px 25px 25px; */
 }
 
-#welcome{
+.welcome{
     font-family: 'integral';
     font-size: 11rem;
 }
 
 @media (min-width: 750px) and (max-width: 900px){
-    #welcome{
+    .welcome{
         font-size: 9rem;
     }
 }
 
 @media (min-width: 600px) and (max-width: 750px){
-    #welcome{
+    .welcome{
         font-size: 7rem;
     }
 }
 
 @media (min-width: 450px) and (max-width: 600px){
-    #welcome{
+    .welcome{
         font-size: 5rem;
     }
 }
 
 @media (max-width: 450px){
-    #welcome{
+    .welcome{
         font-size: 4rem;
-    }
-}
-
-.red{
-    color: #ff4655;
-}
-
-.begin{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mainp{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    /* border: 2px solid white; */
-}
-
-#main_poster{
-    margin: 0px 20px 0px 20px;
-}
-
-.text{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 20px;
-    /* border: 2px solid white; */
-}
-
-.poster1{
-    max-width: 100%;
-    height: auto;
-    border: 2px solid white;
-    margin: 10px;
-}
-
-.star{
-    font-family: 'integral';
-    font-size: 7rem;
-}
-
-@media (min-width: 750px) and (max-width: 900px){
-    .star{
-        font-size: 6rem;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 750px){
-    .star{
-        font-size: 5rem;
-    }
-}
-
-@media (min-width: 450px) and (max-width: 600px){
-    .star{
-        font-size: 4rem;
-    }
-}
-
-@media (max-width: 450px){
-    .star{
-        font-size: 3rem;
     }
 }
 
@@ -131,83 +62,178 @@ body{
     /* border: 2px solid white; */
 }
 
-.sc{
+.sq{
+    /* border: 2px solid white; */
+}
+
+.mainp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    /* border: 2px solid white; */
+}
+
+.schedule .mainp{
     margin: 5px 20px;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
-@media (max-width: 500px){
-    .mainp{
+.poster1{
+    max-width: 100%;
+    height: auto;
+    border: 2px solid white;
+    margin: 10px;
+}
+
+.starting_feb6{
+    flex-direction: column;
+    margin: 100px;
+}
+
+.schedule .sq .welcome, .begin .sq .welcome, .footer .welcome{
+    font-family: 'integral';
+    font-size: 7rem;
+}
+
+@media (min-width: 750px) and (max-width: 900px){
+    .schedule .sq .welcome, .begin .sq .welcome, .footer .welcome{
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 750px){
+    .schedule .sq .welcome, .begin .sq .welcome, .footer .welcome{
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 600px){
+    .schedule .sq .welcome, .begin .sq .welcome, .footer .welcome{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 450px){
+    .schedule .sq .welcome, .begin .sq .welcome, .footer .welcome{
+        font-size: 2.5rem;
+    }
+}
+
+.begin{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+.begin .mainp{
+    margin: 0px 20px;
+}
+
+@media (max-width: 1050px){
+    .begin, .mainp{
         flex-direction: column;
-        /* text-align: left; */
     }
-    .begin{
+}
+
+.begin .sq .yt{
+    display: flex;
+    margin-top: 7px;
+}
+
+.begin .sq .yt .welcome{
+    font-size: 2rem;
+}
+
+a[href^="https://youtu.be/"]:link, a[href^="https://youtu.be/"]:visited, a[href^="https://www.instagram.com/"]:link, a[href^="https://www.instagram.com/"]:visited{
+    color: white;
+    text-decoration: none;
+}
+
+  /* mouse over link */
+a[href^="https://youtu.be/"]:hover, a[href^="https://youtu.be/"]:active, a[href^="https://www.instagram.com/"]:hover, a[href^="https://www.instagram.com/"]:active{
+    color: #ff4655;
+    text-decoration: none;
+  }
+
+.cover{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.image{
+    width: 150px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.g1 .g2 .group .welcome{
+    font-size: 2rem;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid white; */
+    margin: 10px;
+}
+
+.g1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+    margin: 20px 0;
+}
+
+.g2{
+    display: flex;
+}
+
+@media (max-width: 850px){
+    .g1{
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
     }
 }
 
-@media (min-width: 500px) and (max-width: 1000px){
-    .mainp, .begin{
-        flex-direction: column;
-        /* text-align: left; */
+@media (max-width: 450px){
+    .image{
+        width: 125px;
+        margin: 15px;
     }
-}
 
-@media (max-width: 1000px){
-    .result{
-        flex-direction: column-reverse;
-
-    }
-}
-
-@media (min-width: 1000px){
-    .sc_1{
-        width: 500px;
+    .g1 .g2 .group .welcome{
+        font-size: 1.5rem;
     }
 }
 
 .footer{
     background-color: #fff;
-    color: #121212;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
 }
 
-.footer a:link, a:visited{
+a[href^="https://discord"]:link, a[href^="https://discord"]:visited{
     color: #121212;
     text-decoration: none;
 }
 
   /* mouse over link */
-.footer a:hover, a:active {
+a[href^="https://discord"]:hover, a[href^="https://discord"]:active{
     color: #5765f2;
     text-decoration: none;
   }
 
 .d-logo{
     margin: 10px 10px 0 10px;
-}
-
-@media (min-width: 600px) and (max-width: 620px){
-    .star{
-        font-size: 4.5rem;
-    }
-}
-
-@media (min-width: 450px) and (max-width: 520px){
-    .star{
-        font-size: 3rem;
-    }
-}
-
-@media (max-width: 425px){
-    .star{
-        font-size: 2rem;
-    }
 }
 
 @media (max-width: 500px){
@@ -217,20 +243,19 @@ body{
     }
 }
 
-.gb{
-    justify-content: space-evenly;
-    margin: 0 20px 20px 20px;
-}
-
-.logo{
+.begin .sq .yt .y-logo, .footer #i-logo{
     margin: 0px 5px;
 }
 
 @media (max-width: 500px){
-    #y-logo{
+    .y-logo{
         width: 30px;
     }
     #i-logo{
         width: 20px;
     }
+}
+
+.red{
+    color: #ff4655;
 }

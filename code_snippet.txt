@@ -1,0 +1,8 @@
+.mainp{
+    /* color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    /* border: 2px solid white; */
+}
